@@ -1,0 +1,39 @@
+body {
+    color: white;
+    background-color: #333;
+}
+
+/*.center-align h1, h3 {
+    text-align: center;
+}*/
+
+.dual-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 568px) {
+  .dual-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.time-sets {
+    display: grid;
+    grid-template-columns: 50px 200px 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.mx-2 {
+    margin-left: .75px;
+    margin-right: .75px;
+}
